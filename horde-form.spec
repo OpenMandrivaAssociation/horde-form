@@ -5,13 +5,15 @@
 
 Name:          horde-form
 Version:       0.0.2
-Release:       %mkrel 4
+Release:       %mkrel 5
 Summary:       Horde Form API
 License:       LGPL
 Group:         Networking/Mail
 Url:           http://pear.horde.org/index.php?package=%{prj}
 Source0:       %{prj}-%{version}.tgz
 BuildArch:     noarch
+Requires(post):php-pear
+Requires(preun):php-pear
 Requires(pre): %{_bindir}/pear
 Requires:      php-gettext
 Requires:      horde-framework
