@@ -5,7 +5,7 @@
 
 Name:          horde-form
 Version:       0.0.2
-Release:       %mkrel 5
+Release:       %mkrel 6
 Summary:       Horde Form API
 License:       LGPL
 Group:         Networking/Mail
@@ -14,7 +14,7 @@ Source0:       %{prj}-%{version}.tgz
 BuildArch:     noarch
 Requires(post):php-pear
 Requires(preun):php-pear
-Requires(pre): %{_bindir}/pear
+Requires(pre): php-pear
 Requires:      php-gettext
 Requires:      horde-framework
 Requires:      horde-token
@@ -23,7 +23,7 @@ Requires:      php-pear
 Requires:      php-pear-Services_Weather
 BuildRequires: php-pear
 BuildRequires: php-pear-channel-horde
-BuildRoot:     %{_tmppath}/%{name}-%{version}
+
 
 %description
 The Horde_Form:: package provides form rendering, validation, and other
