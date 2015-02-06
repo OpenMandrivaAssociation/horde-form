@@ -5,7 +5,7 @@
 
 Name:          horde-form
 Version:       0.0.2
-Release:       %mkrel 7
+Release:       8
 Summary:       Horde Form API
 License:       LGPL
 Group:         Networking/Mail
